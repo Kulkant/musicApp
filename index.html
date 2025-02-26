@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="songs-container">
+        <h1>My music app</h1>
+        <div class="songs-list-div">
+            <ul class="songs-list" id="songs-list">
+                <li class="song" data-src="songs\Lor Lor - Jassie Gill.mp3">
+                    <img src="https://a10.gaanacdn.com/gn_img/albums/6Zxb27K9wN/xb2pqp2Q39/size_m_1739467994.jpg" alt="song image">
+                    <div class="song__details">
+                        <h2 class="song__title">Lor Lor</h2>
+                        <p class="song__artist">Jassie Gill</p>
+                    </div>
+                    <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                </li>
+                <li class="song" data
+                    -src="songs\Malwa Flow - Khan Bhaini.mp3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEdsy6EDxe_IzzH9Wj7pJ19e8Me50g1q1kw&s" alt="song image">
+                    <div class="song__details">
+                        <h2 class="song__title">Malwa Flow</h2>
+                        <p class="song__artist">Khan Bhaini</p>
+                    </div>
+                    <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                </li>
+                <li class="song" data-src="songs\Tension - Diljit Dosanjh.mp3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSboNODmgzHpGIzRV7rKeKlvcj-czewH9ceow&s" alt="song image">
+                    <div class="song__details">
+                        <h2 class="song__title">Tension</h2>
+                        <p class="song__artist">Diljit Dosanjh</p>
+                    </div>
+                    <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </ul>
+        </div>
+        <div class="play-bar">
+            <div class="player-controls">
+                <button id="prev-btn"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                <button id="play-btn"><i class="fa-solid fa-play"></i></button>
+                <button id="next-btn"><i class="fa-solid fa-circle-chevron-right"></i></button>
+            </div>
+            <div class="play-bar__time">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0">
+                <span id="duration">0:00</span>
+            </div>
+            <div class="volume-control">
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume-bar" min="0"  max="100" step="1" value="1">
+                <button id="mute-btn">Mute</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
